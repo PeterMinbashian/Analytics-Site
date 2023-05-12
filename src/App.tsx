@@ -13,12 +13,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
           <Routes>
-          <Route path="/" element={<Navigate to='Main'/>}/>
-            <Route path='/Main' element={<Main totalPage={TotalPage} setTotalPage={setTotalPage} />}/>
+            <Route path="/" element={<Navigate to='Main' replace={true}/>}/>
+            <Route path='/Main' element={<Main totalPage={TotalPage} setTotalPage={setTotalPage}/>}/>
             <Route path="/total" element={<Total />} />
           </Routes>
       </BrowserRouter>
-      <Main/>
     </div>
   );
 }

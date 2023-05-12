@@ -1,12 +1,22 @@
-import { Text, createStyles } from "@mantine/core"
+import { Card, Text } from '@mantine/core';
 
-function Header(){
-    return(
-        <Text component="h1" fz={40} fw={700} color='Black' sx = {{fontFamily: "Copperplate"}}>
-            RPA Time Saved
-        </Text>
-    )
-
+function Header() {
+  return (
+    // <Card radius="xl" shadow="md">
+    <Text 
+    style={{ 
+      fontSize: '60px', 
+      fontWeight: 'bold', 
+      color: 'black', 
+      fontFamily: 'Arial, sans-serif', 
+      borderRadius: '50px', 
+      padding: '20px', 
+      backgroundColor: '#FFFFFF' 
+    }}>
+      The Power of RPA in the Workplace
+  </Text>
+    // </Card>
+  );
 }
 
-export default Header
+export default Header;
